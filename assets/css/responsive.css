@@ -1,0 +1,231 @@
+/* 
+----------------------------------- 
+MEDIA QUERIES
+----------------------------------- 
+*/
+
+@media (max-width: 1184px) {
+  /* Navigation */
+  .navigation {
+    flex-wrap: wrap;
+  }
+  .navigation > div {
+    min-width: calc(25% - 12px);
+  }
+  .navigation > div:nth-child(7) {
+    display: inherit;
+  }
+  .navigation > div:not(:last-child) {
+    margin-right: 0px;
+  }
+  .navigation > div:not(:nth-child(4n)) {
+    margin-right: 16px;
+  }
+  .navigation > div:nth-child(-n + 4) {
+    margin-bottom: 20px;
+  }
+  .navigation > div span {
+    max-width: 180px;
+  }
+
+  /* Pictures */
+  .pictures {
+    height: 370px;
+  }
+  .pictures > .col-2 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* HEADER */
+  header nav span {
+    display: none;
+  }
+  /* Pictures */
+  .pictures {
+    height: 276px;
+  }
+  .pictures > .col-1 {
+    flex: 2;
+  }
+  .pictures > .col-2 {
+    width: auto;
+    flex: 1;
+  }
+  /* Description */
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+  .description .col-1,
+  .description .col-2 {
+    width: 100%;
+  }
+  .description .col-1 {
+    margin-bottom: 60px;
+  }
+  .description .col-2 {
+    margin-left: 0px;
+    display: flex;
+  }
+  .description .col-2 div:first-child,
+  .description .col-2 div:last-child {
+    width: 50%;
+    height: auto;
+  }
+  .description .col-2 div:first-child {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .description .col-2 div:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  /* SECTION 1 */
+  .section-1 .carrousel-col {
+    width: calc(100% / 2 - 10px);
+  }
+  /* SECTION 2 */
+  .section-2 .col {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  /* COMMON RULES */
+  h1 {
+    font-size: 32px;
+    margin: 20px 0 0px 0;
+    line-height: 58px;
+  }
+  /* HEADER */
+  header nav {
+    display: none;
+  }
+  header img {
+    width: 132px;
+  }
+  header .container > i {
+    display: flex;
+  }
+  /* MAIN */
+  /* Navigation */
+  .navigation {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-left: -20px;
+  }
+  .navigation::-webkit-scrollbar {
+    display: none;
+  }
+  .navigation > div {
+    flex: 0 0 auto;
+  }
+  .navigation > div:first-child {
+    margin-left: 20px;
+  }
+  .navigation > div:not(:last-child) {
+    margin-right: 16px;
+  }
+  .navigation > div:nth-child(-n + 4) {
+    margin-bottom: 0px;
+  }
+
+  /* Pictures */
+  .pictures {
+    margin: 0 -20px 40px -20px;
+  }
+  .pictures > .col-2 {
+    display: none;
+  }
+
+  /* Menu */
+  .menu {
+    display: none;
+  }
+
+  /* Description */
+  .description .col-1 p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .description .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .description .col-2 > div:first-child,
+  .description .col-2 > div:last-child {
+    width: 100%;
+    min-height: 188px;
+  }
+  .description .col-2 div:first-child {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+  .description .col-2 div:last-child {
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 0px;
+  }
+
+  /* SECTION 1 */
+  .section-1 > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-1 .carrousel-col {
+    width: calc(100%);
+  }
+  .section-1 .carrousel-col img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .section-1 .col-1 {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+  .section-1 .owl-2020 img {
+    height: 30px;
+  }
+  .section-1 .owl-2020 {
+    top: 340px;
+  }
+  .section-1 .col-2 {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .section-1 .col-2 .carrousel-col:first-child {
+    margin-left: 20px;
+  }
+  .section-1 .col-2 .carrousel-col:last-child {
+    padding-right: 20px;
+  }
+  .section-1 .col-2 .carrousel-col:last-child .circle {
+    right: 30px;
+  }
+
+  /* SECTION 2 */
+  .section-2 .col {
+    width: calc(100%);
+  }
+  .section-2 .col > img {
+    height: 400px;
+  }
+  .section-2 .carrousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .section-2 .col:first-child {
+    margin-left: 20px;
+  }
+  .section-2 .col:last-child {
+    padding-right: 20px;
+  }
+}
